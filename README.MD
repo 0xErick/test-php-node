@@ -19,6 +19,19 @@ CPU 6核
 
 
 
+设置连接数到 5W
+
+```
+查看目前资源限制
+ulimit -a
+
+设置 open files 5W
+ulimit -n 50000
+
+```
+
+
+
 websocket  router 采用 docker 安装   
 
 ```
@@ -31,12 +44,17 @@ docker run -p 8080:8080 crossbario/crossbar
 
 
 
-slow-io  基于node.js 构建
+slow-io  基于node.js 构建  ip  149.28.138.20
 
 ```
 install  node.js
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+install pm2
+
+启动 应用
+pm2 
 
 ```
 

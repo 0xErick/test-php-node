@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "slow-io",
+      "cwd": "./",
+      "script": "node",
+      "instances": 6,
+      "exec_mode": "fork",
+      "args": [
+        "index.js"
+      ]
+    }
+  ]
+}% 
