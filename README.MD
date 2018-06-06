@@ -8,7 +8,7 @@
 
 
 
-服务器软硬件配置参考
+client  node-server  php-server 的机器配置
 
 ```
 vultr 新加坡机房 VC2 实例
@@ -16,6 +16,19 @@ OS ubuntu 16.04 64位
 CPU 6核
 内存 16384GB
 ```
+
+
+
+websocket router  和 slow-io  的机器配置   
+
+```
+vultr 新加坡机房 Bare metal 实例
+OS ubuntu 16.04 64位
+CPU 8核 @3.8Ghz  E3-1270V6 处理
+内存 32768MB
+```
+
+
 
 
 
@@ -54,7 +67,7 @@ sudo apt-get install -y nodejs
 install pm2
 
 启动 应用
-pm2 
+pm2 start index.js -i max
 
 ```
 
